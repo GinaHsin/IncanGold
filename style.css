@@ -54,140 +54,13 @@ h1{
 /**{
 	outline: 1px solid black;
 }*/
-
-*, *::before, *::after{
-	box-sizing: border-box;
-}
 @font-face {
 	font-family: 'K2D Thin';
 	src: url('K2D-Thin.ttf') format("truetype"),
   }
 
-/*聊天室*/
-.chat-box{
-	width: 598px;
-	height: 276px;
-	padding: 0 10px 10px 20px;
-	border-radius: 20px;
-	background-color: rgba(132, 132, 132, 0.2);
-	font-size: 20px;
-	color: white;
-}
-.chat{
-    width: 568px;
-    height: 212px;
-    padding: 0 0 10px 0;
-    overflow: auto;
-	scrollbar-width: thin;
-	scrollbar-color: rgba(4, 4, 4, 0.35)  rgba(132, 132, 132, 0.2);
-}
-.chat p{
-	width: 542px;
-	font-family: 'K2D Thin', sans-serif;
-	font-weight: 400;
-	/*font-size: 20px;*/
-	line-height: 26px;
-	color: rgba(255, 255, 255, 1);
-	display: flex;
-	justify-content: space-between;
-}
-.chat p:not(:last-child){
-	margin-bottom: 5px;
-}
-.chat span{
-	font-weight: 400;
-	font-size: 15px;
-	color: rgba(123, 123, 123, 1);
-	margin-top: 3px;
-}
-.chat::-webkit-scrollbar{
-	width: 16px;    
-}
-.chat::-webkit-scrollbar-track{
-	background-color: rgba(132, 132, 132, 0.2);
-	border-radius: 10px;
-}
-.chat::-webkit-scrollbar-thumb{
-	background-color: rgba(4, 4, 4, 0.35);
-	border-radius: 10px;
-}
-.input-box{
-	width: 568px;
-	height: 50px;
-	margin-top: 10px;
-	padding-left: 10px;
-	padding-bottom: 10px;
-	border-radius: 10px;
-	border: none;
-	background: url(./image/Vector.png) no-repeat rgba(242, 242, 242, 0.4) 530px 13.15px;
-}
-
-/*聊天室2.0*/
-.game-chat2{
-    margin: 50px 0 0 10px;
-    box-sizing: border-box;
-	width: 578px;
-	height: 276px;
-	padding: 10px 10px 10px 20px;
-	border-radius: 20px;
-	background-color: rgba(132, 132, 132, 0.2);
-    font-size: 20px;
-    line-height: 27.24px;
-    font-family: 'K2D Thin', sans-serif;
-	font-weight: 400;	
-	color: rgba(255, 255, 255, 1);
-}
-.game-chat__room2{
-    width: 548px;
-    height: 239px;
-    margin-top: -23px;
-    padding-top: 10px;
-	
-}    
-.game-chat_box2{
-    width: 522px;
-    height: 229px;
-    padding-bottom: 10px;
-	overflow-y: scroll;
-	scrollbar-width: thin;
-	scrollbar-color: rgba(4, 4, 4, 0.35)  rgba(132, 132, 132, 0.2);
-}    
-.game-chat__room2 p{
-	width: 522px;
-	display: flex;
-	justify-content: space-between;
-}
-.game-chat__room2 p:not(:last-child){
-	margin-bottom: 5px;
-}
-.game-chat__room2 span{
-	font-size: 15px;
-	color: rgba(123, 123, 123, 1);
-	margin-top: 3px;
-}
-.game-chat__room2::-webkit-scrollbar{
-	width: 16px;    
-}
-.game-chat__room2::-webkit-scrollbar-track{
-	background-color: rgba(132, 132, 132, 0.2);
-	border-radius: 10px;
-}
-.game-chat__room2::-webkit-scrollbar-thumb{
-	background-color: rgba(4, 4, 4, 0.35);
-	border-radius: 10px;
-}
-.game-chat__input2{
-	width: 548px;
-	height: 50px;
-	border-radius: 10px;
-	margin-top: 10px;
-	padding-right: 10px;
-	border: none;
-	background: url(./image/Vector.png) no-repeat rgba(242, 242, 242, 0.4) 530px 13.15px;
-}
-
 /*聊天室3.0*/
-.game-chat3{
+.game-chat{
     margin: 50px 0 0 10px;
     box-sizing: border-box;
 	width: 578px;
@@ -201,7 +74,7 @@ h1{
 	font-weight: 400;	
 	color: rgba(255, 255, 255, 1);
 }
-.game-chat__room3{
+.game-chat__room{
     width: 548px;
     height: 208px;
     margin-bottom: 10px;
@@ -209,37 +82,37 @@ h1{
 	scrollbar-width: thin;
 	scrollbar-color: rgba(4, 4, 4, 0.35)  rgba(132, 132, 132, 0.2);
 }      
-.game-chat__room3 p{
+.game-chat__room p{
 	width: 522px;
 	display: flex;
 	justify-content: space-between;
 }
-.game-chat__room3 p:not(:last-child){
+.game-chat__room p:not(:last-child){
 	margin-bottom: 5px;
 }
-.game-chat__room3 span{
+.game-chat__room span{
 	font-size: 15px;
 	color: rgba(123, 123, 123, 1);
 }
-.game-chat__room3::-webkit-scrollbar{
+.game-chat__room::-webkit-scrollbar{
 	width: 16px;    
 }
-.game-chat__room3::-webkit-scrollbar-track{
+.game-chat__room::-webkit-scrollbar-track{
 	background-color: rgba(132, 132, 132, 0.2);
 	border-radius: 10px;
 }
-.game-chat__room3::-webkit-scrollbar-thumb{
+.game-chat__room::-webkit-scrollbar-thumb{
 	background-color: rgba(4, 4, 4, 0.35);
 	border-radius: 10px;
 }
-.game-chat__input3{
+.game-chat__input{
 	width: 548px;
 	height: 50px;
     border-radius: 10px;
     background-color: rgba(242, 242, 242, 0.4);
 	position: relative;
 }
-.game-chat__input3 input{
+.game-chat__input input{
     background-color: rgba(242, 242, 242, 0);
 	border-radius: 10px;
     border: none;
@@ -250,7 +123,7 @@ h1{
     font-size: 20px;
 	color: rgba(255, 255, 255, 1);
 }
-.game-chat__input3 button{
+.game-chat__input button{
 	width: 28px;
 	height: 24px;
     background-color: rgba(242, 242, 242, 0);
